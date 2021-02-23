@@ -1,0 +1,18 @@
+﻿<Window x:Class="AsyncDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncDemo"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Asynchronous Programming Demo" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Simple Asynchronous Application" Margin="10 0" FontSize="28"></Label>
+        <Button x:Name="executeSync" Content="Synchronous Execute" Margin="10" Padding="10"
+                Click="executeSync_Click"></Button>
+        <Button x:Name="executeASync" Content="Asynchronous Execute" Margin="10" Padding="10"
+                Click="executeASync_Click"></Button>
+        <TextBlock x:Name="results" Margin="10"></TextBlock>
+    </StackPanel>
+</Window>
